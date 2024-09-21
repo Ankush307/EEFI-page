@@ -20,8 +20,12 @@
 </head>
 
 <body>
-    <main>
-        <section class="max-w-[1920px] mx-auto  bg_img bg-no-repeat overflow-hidden">
+    <main class="max-w-[1920px] mx-auto overflow-hidden">
+        <section class="  bg_img bg-no-repeat relative">
+            <div class="relative -z-10">
+                <img class=" absolute -top-4 left-0 xl:max-w-[1160px] lg:max-w-[900px] object-cover lg:h-[710px] xl:h-[810px] h-[650px] md:w-full 2xl:hidden block"
+                    src="./assets/image/png/blue_layer.png" alt="blue layer">
+            </div>
             <img class="absolute right-[3%] top-[10%]" src="./assets/image/svg/4_dots.svg" alt="4_dots">
             <div class="container max-w-[1140px] mx-auto w-full px-3">
                 <nav class="flex pt-[2px] pb-[3px] justify-between relative z-50">
@@ -72,58 +76,70 @@
                     </div>
                 </nav>
             </div>
-
-            <div class="flex flex-col   lg:flex-row  max-lg:items-center">
+            <div class="relative -z-10">
+                <img class="absolute -top-12 left-[-124px] h-[810px] w-[80%] 2xl:block hidden"
+                    src="./assets/image/png/blue_layer.png" alt="blu layer">
+            </div>
+            <div class="flex flex-col lg:flex-row max-lg:items-center">
                 <div class="text-center flex flex-col max-lg:justify-center lg:mt-36 lg:text-left lg:ml-[151px]">
                     <h2
                         class="NeueMachina_font text-white text-[48px] lg:max-w-[428px] lg:text-[85px] leading-tight lg:leading-[95.74px] mt-6 lg:mt-0">
                         BUILDING ELASTIC PROTOCOL
                     </h2>
-                    <p class="font-Raleway text-[16px] leading-6 max-w-full lg:max-w-[524px] text-white mt-4 lg:mt-6">
+                    <p
+                        class="font-Raleway text-[16px] leading-6 lg:max-w-[524px] text-white mt-4 lg:mt-6 max-w-[524px] mx-auto">
                         An ecosystem of unique yield strategies that help you earn yield, amplify, and stretch it across
                         all
                         market conditions.
                     </p>
                     <h4 class="raleway font-bold text-[18px] mt-4 text-white">Audited by Omniscia</h4>
                 </div>
-                <img src="/assets/image/png/hero_section_img.png" alt="Space Man"
-                    class="w-[200px]  lg:w-auto mt-8 lg:mt-0">
+                <div class="relative lg:opacity-[60%] xl:opacity-100">
+                    <img src="/assets/image/png/hero_section_img.png" alt="Space Man"
+                        class="w-[200px]  lg:w-auto mt-8 lg:mt-0 lg:-ml-40 xl:ml-0">
+                </div>
             </div>
         </section>
-        <section class="bear_bull_bg flex flex-col relative justify-cente min-h-screen">
-            <img class="absolute  bottom-[-7%] z-10 w-full"
-                src="./assets/image/png/Clouds_bottom.png" alt="clouds">
+        <section
+            class="bear_bull_bg flex flex-col relative justify-cente  lg:h-[825px] md:h-[640px] sm:h-[556px] h-[520px] max-w-[1920px] mx-auto">
+            <img class="absolute bottom-[-4%]  md:bottom-[-8%] z-10 w-full" src="./assets/image/png/Clouds_bottom.png"
+                alt="clouds">
             <div class="container z-20 ">
-                <div class="flex z-[-10] flex-wrap  lg:top-[100px] md:top-[140px] sm:top-[170px] top-[240px] relative">
-                    <div class="w-6/12 z-[-10] px-3">
-                        <img class="absolute  lg:max-w-[650px] md:max-w-[60%] sm:max-w-[60%] max-w-[50%] "
-                            src="./assets/image/png/bull_img.png" alt="bull-img">
-                    </div>
-                    <div class="w-6/12 z-[-10] px-3">
-                        <img class="absolute right-[5%] lg:max-w-[532px] md:max-w-45%] sm:max-w-[50%] max-w-[40%]  top"
-                            src="./assets/image/png/bear_img.png" alt="bear-img">
-                    </div>
-                </div>
                 <div class="flex justify-center">
                     <h1
                         class="lg:text-[52px] md:text-[42px] text-3xl font-extrabold leading-[120%] text-white plus_jakarta text-center">
                         Amplify and STRETCH GAINS
                     </h1>
                 </div>
-                <div
-                    class="flex justify-centerz-10">
-                    <p class="text-white font-raleway max-w-[619px] text-center mt-96 mx-auto">We take a different balanced approach
-                        to finding
-                        and creating
-                        yield opportunities in the everchanging crypto
-                        market. Our yield strategies help users stay protected and hedged during bear markets and
-                        amplify yield
-                        during
-                        bull markets without resorting to leverage or other dangerous techniques.</p>
-                </div>
-                <img class="absolute left-[50%] translate-x-[-50%]"
-                        src="./assets/image/png/boy.png" alt="boy-img">
+                </p>
             </div>
+
+            <div class="flex justify-centerz-10 relative z-30">
+                <p
+                    class=" text-white font-raleway max-w-[619px] lg:mt-[325px] md:mt-[196px] sm:mt-[148px] mt-[110px] text-center mx-auto drop-shadow-xl xl:drop-shadow-none">
+                    We take a different balanced
+                    approach
+                    to finding
+                    and creating
+                    yield opportunities in the everchanging crypto
+                    market. Our yield strategies help users stay protected and hedged during bear markets and
+                    amplify yield
+                    during
+                    bull
+            </div>
+            <div class="flex z-[10] flex-wraprelative ">
+                <div class="w-6/12 z-[-10] px-3">
+                    <img class="absolute  lg:max-w-[684px] md:max-w-[60%] sm:max-w-[60%] max-w-[50%] bottom-16 "
+                        src="./assets/image/png/bull_img.png" alt="bull-img">
+                </div>
+                <div class="w-6/12 z-[-10] px-3">
+                    <img class="absolute  bottom-14 right-[0%]  lg:max-w-[569px] md:max-w-45%] sm:max-w-[50%] max-w-[40%]"
+                        src="./assets/image/png/bear_img.png" alt="bear-img">
+                </div>
+            </div>
+
+            <img class="z-20 absolute left-[50%] translate-x-[-50%] bottom-20 " src="./assets/image/png/boy.png"
+                alt="boy-img">
         </section>
         <section class="roadmap_bg min-h-screen max-w-[1920px] mx-auto">
             <div class=" p-4">
@@ -441,16 +457,19 @@
         <footer class="footer_bg min-h-screen max-w-[1920px] mx-auto -mt-1 flex flex-col items-center justify-center">
             <div class="container max-w-[1140px] mx-auto">
                 <div class="w-full flex flex-wrap">
-                    <div class="lg:w-6/12 w-full px-3 items-center flex flex-col justify-center ">
+                    <div class="xl:w-6/12 w-full px-3 items-center flex flex-col justify-center ">
                         <h2
                             class="NeueMachina_font text-white md:text-[46px] sm:text-4xl text-3xl leading-[120%] font-extrabold max-w-[550px] pb-11">
                             (E,E) Game Theory: An UPGRADE from (3,3)</h2>
-                        <p class="text-white raleway italic leading-[160%] pb-5">Remember (3,3) at its core was about
+                        <p class="text-white raleway italic leading-[160%] pb-5 max-w-[515px]">Remember (3,3) at its
+                            core was about
                             social coordination. Or, people working together to achieve a common outcome or goal. (E,E)
                             is the same. But with (E,E) people are working together not to grow a robust treasury that
                             would back a decentralized stablecoin but instead to establish the first ever decentralized
                             amplified yield token… $EEFI. A token that can produce yield in any market condition.</p>
-                        <p class="text-white raleway italic leading-[160%] lg:mb-0 mb-[64px]">To achieve this (E,E) has everyone work
+                        <p class="text-white raleway italic leading-[160%] lg:mb-0  max-w-[502px]">To achieve this (E,E)
+                            has
+                            everyone work
                             together by interacting with and supporting its ecosystem flywheel: Vaults, Bonds, Markets
                             and other components. Interaction with the (E,E) Flywheel will help build a treasury of what
                             we term high quality “growth assets”. Assets that are revenue bearing, interest bearing,
@@ -458,10 +477,12 @@
                             used to act as long term decentralized leverage on EEFI’s value. This is (E,E). This is
                             sustainable. This is the UPGRADE.</p>
                     </div>
-                    <div class=" lg:w-6/12 w-full px-3 mx-auto">
-                        <div class="max-w-[530px] mx-auto">
+                    <div class=" xl:w-6/12 w-full px-3 mx-auto">
+                        <div class="relative max-w-[530px] mx-auto">
+                            <img class="absolute min-h-[820px] sm:min-h-[530px]"
+                                src="./assets/image/png/footer_dots.png" alt="footer">
                             <div
-                                class="bg-white py-[6.6px] px-[6px] max-w-[129px] max-h-[94px]  rounded-[4px] mx-auto mb-[76px]">
+                                class="bg-white py-[6.6px] px-[6px] max-w-[129px] max-h-[94px]  rounded-[4px] mx-auto mb-[76px] mt-32">
                                 <div class="bg-[#1743C0] text-center py-3 px-6">
                                     <h2
                                         class="text-white md:text-2xl text-xl NeueMachina_font_ultra_bold leading-[120%] font-extrabold">
@@ -472,10 +493,12 @@
                             <div class="flex flex-wrap w-full pb-[37px]">
                                 <div class="w-4/12 px-3">
                                     <div
-                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px] pb-5 px-5">
+                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px] pb-5 px-5 ">
                                         <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/bonds.svg "
                                             alt="bonds ">
-                                        <p class="NeueMachina_font_ultra_bold leading-[160%] text-center md:text-base text-sm">EEFI Bonds</p>
+                                        <p
+                                            class="NeueMachina_font_ultra_bold leading-[160%] text-center md:text-base text-sm">
+                                            EEFI Bonds</p>
                                         <p class="raleway text-sm leading-[120%] text-center">Purchase. Lock up. Get
                                             Discount</p>
                                     </div>
@@ -484,7 +507,9 @@
                                     <div
                                         class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-5">
                                         <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/lock.svg" alt="lock">
-                                        <p class="NeueMachina_font_ultra_bold leading-[160%] text-center  md:text-base text-sm">Vault </p>
+                                        <p
+                                            class="NeueMachina_font_ultra_bold leading-[160%] text-center  md:text-base text-sm">
+                                            Vault </p>
                                         <p class="raleway text-sm leading-[120%] text-center">Deposit + Earn</p>
                                     </div>
                                 </div>
@@ -493,7 +518,9 @@
                                         class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-5">
                                         <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/yield_farming.svg "
                                             alt="yield_farming">
-                                        <p class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[160%] text-center">LP Positions
+                                        <p
+                                            class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[160%] text-center">
+                                            LP Positions
                                         </p>
                                         <p class="raleway text-sm leading-[120%] text-center">Yield Farming</p>
                                     </div>
@@ -505,7 +532,9 @@
                                         class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-[8px]">
                                         <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/funding.svg"
                                             alt=" funding">
-                                        <p class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center"> Funding <br>
+                                        <p
+                                            class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center">
+                                            Funding <br>
                                             raised acquires <br> Growth assets</p>
                                     </div>
                                 </div>
@@ -513,9 +542,12 @@
                                     <div
                                         class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-3">
                                         <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/flag.svg " alt="flag">
-                                        <p class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center">OHM Treasury
+                                        <p
+                                            class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center">
+                                            OHM Treasury
                                             Strategy </p>
-                                        <p class="raleway md:text-sm text-xs leading-[160%] text-center">Deposit + Earn</p>
+                                        <p class="raleway md:text-sm text-xs leading-[160%] text-center">Deposit + Earn
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="w-4/12 px-3">
@@ -523,7 +555,9 @@
                                         class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-5">
                                         <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/marketo.svg "
                                             alt="Markets  ">
-                                        <p class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[160%] text-center">Markets </p>
+                                        <p
+                                            class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[160%] text-center">
+                                            Markets </p>
                                         <p class="raleway text-sm leading-[120%] text-center">Trade + Arb (Fees)</p>
                                     </div>
                                 </div>
@@ -534,7 +568,9 @@
                                         class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-[8px]">
                                         <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/growth_assets.svg"
                                             alt=" funding">
-                                        <p class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center"> Yield From
+                                        <p
+                                            class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center">
+                                            Yield From
                                             Growth
                                             <br> Assets
                                         </p>
@@ -545,7 +581,9 @@
                                         class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-[8px]">
                                         <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/revenue.svg"
                                             alt=" revenue">
-                                        <p class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center"> Fees.
+                                        <p
+                                            class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center">
+                                            Fees.
                                             Revenue.
                                             Yield to Treasury
                                         </p>
@@ -555,10 +593,12 @@
                             <div class="flex flex-wrap w-full justify-center items-center ">
                                 <div class="flex-wrap mx-auto">
                                     <div
-                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md  pt-[17px]  pb-5 px-4">
+                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md  pt-[17px]  pb-5 px-4 mb-32">
                                         <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/furnace.svg"
                                             alt=" revenue">
-                                        <p class="NeueMachina_font_ultra_bold md:text-base text-[12.28px] leading-[160%] text-center">EEFI Furnace
+                                        <p
+                                            class="NeueMachina_font_ultra_bold md:text-base text-[12.28px] leading-[160%] text-center">
+                                            EEFI Furnace
                                         </p>
                                         <p class="raleway text-sm leading-[160%] text-center">Buy + Burn EEFI</p>
                                     </div>
