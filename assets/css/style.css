@@ -36,7 +36,7 @@
     background-image: url(/assets/image/png/bull_bear_background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    flex-wrap:wrap;
+    background-position: center;
 }
 .roadmap_bg {
     background-image: url(/assets/image/png/Roadmap_bg.png);
