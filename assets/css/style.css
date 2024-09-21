@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "Neue Machina";
+    src: url("../fonts/NeueMachina-Regular.ttf") ;
+}
+@font-face {
+    font-family: "Neue Machina ultra_bold";
+    src: url("../fonts/NeueMachina-Ultrabold.ttf");
+}
+@font-face {
+    font-family: "Neue Machina";
+    src: url("../fonts/NeueMachina-Light.ttf") ;
+}
+
+.NeueMachina_font {
+    font-family: "Neue Machina", sans-serif;
+}
+.NeueMachina_font_ultra_bold {
+    font-family: "Neue Machina ultra_bold", sans-serif;
+}
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+}
+
+.plus_jakarta {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.bg_img{
+    background-image: url(/assets/image/png/hero_bg_img.png);
+}
+.bear_bull_bg {
+    background-image: url(/assets/image/png/bull_bear_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap:wrap;
+}
+.roadmap_bg {
+    background-image: url(/assets/image/png/Roadmap_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer_bg {
+    background-image: url(/assets/image/png/footer_bg_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

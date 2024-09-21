@@ -1,0 +1,581 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEFI</title>
+    <link rel="shortcut icon" href="/assets/image/svg/logo_img.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <section class="max-w-[1920px] mx-auto  bg_img bg-no-repeat overflow-hidden">
+            <img class="absolute right-[3%] top-[10%]" src="./assets/image/svg/4_dots.svg" alt="4_dots">
+            <div class="container max-w-[1140px] mx-auto w-full px-3">
+                <nav class="flex pt-[2px] pb-[3px] justify-between relative z-50">
+                    <div><a href="/"><img src="./assets/image/svg/logo_img.svg" alt="logo"></a></div>
+                    <div
+                        class="gap-[25px] flex flex-col menulist justify-center items-center duration-300 ease-linear text-white w-full -right-full min-h-screen fixed top-0 bg-blue-500 z-50 lg:relative lg:min-h-fit lg:w-fit lg:flex-row lg:right-0 lg:bg-transparent">
+                        <p data-aos="fade-up"
+                            class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-base"
+                            href="/">About</p>
+                        <p data-aos="fade-up"
+                            class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-base">
+                            IBO Event</p>
+                        <p data-aos="fade-up"
+                            class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-base">
+                            EEFI Tokenomics</p>
+                        <p data-aos="fade-up"
+                            class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-base">
+                            Team</p>
+                        <p data-aos="fade-up"
+                            class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-base">
+                            Partners</p>
+                        <p data-aos="fade-up"
+                            class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-base">
+                            Roadmap</p>
+                        <p class="flex items-center">More
+                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.8027 6.20992C11.6711 6.06997 11.5037 6 11.3004 6C11.0972 6 10.9297 6.06997 10.7982 6.20992L8 9.18702L5.20179 6.20992C5.07025 6.06997 4.90284 6 4.69955 6C4.49626 6 4.32885 6.06997 4.19731 6.20992C4.06577 6.34987 4 6.52799 4 6.74427C4 6.96056 4.06577 7.13867 4.19731 7.27862L7.49776 10.7901C7.56951 10.8664 7.64723 10.9206 7.73094 10.9527C7.81465 10.9847 7.90433 11.0005 8 11C8.09566 11 8.18535 10.984 8.26906 10.9519C8.35277 10.9198 8.43049 10.8659 8.50224 10.7901L11.8027 7.27862C11.9342 7.13867 12 6.96056 12 6.74427C12 6.52799 11.9342 6.34987 11.8027 6.20992Z"
+                                    fill="white" />
+                            </svg>
+                        </p>
+                    </div>
+                    <div class="flex gap-8">
+                        <div class="flex justify-center items-center">
+                            <button
+                                class="rounded-lg justify-center flex items-center font-medium fs-md text-[#1743C0] bg-white hover:bg-[#1743C0] hover:text-white raleway border-2 border-[#1743C1] hover:border-white py-2 px-6 max-sm:hidden">Enter
+                                App</button>
+                        </div>
+                        <div class="flex flex-col lg:hidden menubar justify-between z-[200] relative w-8 h-6 mt-6">
+                            <span
+                                class="w-full h-1 flex rounded-md transition-all duration-500 bg-white menubarFirst origin-left"></span>
+                            <span
+                                class="w-full h-1 flex rounded-md transition-all duration-500 bg-white menubarSecond origin-left"></span>
+                            <span
+                                class="w-full h-1 flex rounded-md transition-all duration-500 bg-white menubarThird origin-left"></span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="flex flex-col   lg:flex-row  max-lg:items-center">
+                <div class="text-center flex flex-col max-lg:justify-center lg:mt-36 lg:text-left lg:ml-[151px]">
+                    <h2
+                        class="NeueMachina_font text-white text-[48px] lg:max-w-[428px] lg:text-[85px] leading-tight lg:leading-[95.74px] mt-6 lg:mt-0">
+                        BUILDING ELASTIC PROTOCOL
+                    </h2>
+                    <p class="font-Raleway text-[16px] leading-6 max-w-full lg:max-w-[524px] text-white mt-4 lg:mt-6">
+                        An ecosystem of unique yield strategies that help you earn yield, amplify, and stretch it across
+                        all
+                        market conditions.
+                    </p>
+                    <h4 class="raleway font-bold text-[18px] mt-4 text-white">Audited by Omniscia</h4>
+                </div>
+                <img src="/assets/image/png/hero_section_img.png" alt="Space Man"
+                    class="w-[200px]  lg:w-auto mt-8 lg:mt-0">
+            </div>
+        </section>
+        <section class="bear_bull_bg lg:min-h-[unset] flex flex-col justify-cente md:min-h-56 relative ">
+            <img class="absolute lg:bottom-[-110px] md:bottom-[-85px] sm:bottom-[-80px] bottom-[-70px] z-10 lg:h-[223px] md:h-[200px] sm:h-[200px] h-[160px] w-full"
+                src="./assets/image/png/Clouds_bottom.png" alt="clouds">
+            <div class="container z-20 relative">
+                <div class="flex z-[-10] flex-wrap absolute lg:top-[100px] md:top-[140px] sm:top-[170px] top-[240px] ">
+                    <div class="w-6/12 relative z-[-10]  px-3">
+                        <img class="lg:max-w-[130%] md:max-w-[130%] sm:max-w-[135%] max-w-[170%] lg:-translate-y-6 lg:-translate-x-6 md:-translate-x-5 md:-translate-y-7 sm:-translate-x-16 sm:-translate-y-7 -translate-x-20 -translate-y-7  lg:m-0 md:m-0 sm:mr-[20px] mr-0"
+                            src="./assets/image/png/bull_img.png" alt="bull-img">
+                    </div>
+                    <div class="w-6/12 relative z-[-10] px-3">
+                        <img class="lg:max-w-[130%] md:max-w-[95%] sm:max-w-[95%] max-w-[120%] lg:w-full lg:translate-x-16 lg:translate-y-5 md:translate-x-0 md:translate-y-0 sm:translate-x-0 sm:translate-y-0 translate-x-0 translate-y-0 lg:m-0 md:m-0 sm:ml-5 ml-0"
+                            src="./assets/image/png/bear_img.png" alt="bear-img">
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <h1
+                        class="fs-3xl font-extrabold leading-[120%] lg:max-w-[726px] md:max-w-[726px] sm:max-w-[400px] max-w-[300px] text-white font-jakarta lg:pt-5 md:pt-4 sm:pt-0 pt-2 text-center">
+                        Amplify and STRETCH GAINS
+                    </h1>
+                </div>
+                <div
+                    class="flex justify-center xl:mt-[366px] lg:mt-[306px] md:mt-[370px] sm:mt-[590px] mt-[550px] z-10">
+                    <p class="text-white font-raleway max-w-[619px] text-center">We take a different balanced approach
+                        to finding
+                        and creating
+                        yield opportunities in the everchanging crypto
+                        market. Our yield strategies help users stay protected and hedged during bear markets and
+                        amplify yield
+                        during
+                        bull markets without resorting to leverage or other dangerous techniques.</p>
+                    <img class="lg:bottom-[-230px] lg:top-[unset] md:top-[unset] md:bottom-[-230px] sm:top-[400px] top-[400px] sm:bottom-[unset] absolute"
+                        src="./assets/image/png/boy.png" alt="boy-img">
+                </div>
+            </div>
+        </section>
+        <section class="roadmap_bg min-h-screen max-w-[1920px] mx-auto">
+            <div class=" p-4">
+                <h2
+                    class=" lg:text-[46px] md:text-4xl text-3xl  leading-[] text-white font-bold mb-[100px] text-center mt-12 ">
+                    Roadmap</h2>
+                <div class="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
+                    <div class="flex md:contents flex-row-reverse">
+                        <div data-aos="zoom-in-down"
+                            class=" py-9 pl-8  md:mb-0 pr-4 mt-1 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-1 col-end-5 mr-auto md:mr-[20px] md:ml-auto">
+                            <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">2022</p>
+                            <ul class="text-white raleway max-w-[343px]  ">
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px] pt-4">
+                                    Ideation of Elastic Protocol </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-9">
+                                    Elastic Protocol GitBook </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-9">
+                                    Full Code development of Elastic Vault Strategy </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-9">
+                                    Audit</li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-norzxmal raleway leadizxng-[150%] list-disc ml-[20px] ">
+                                    Complete Alpha Testing </li>
+                            </ul>
+                        </div>
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div class="flex items-center justify-center w-6 h-full">
+                                <div
+                                    class="w-1 h-full bg-[#4273FF] rounded-t-full bg-gradient-to-b from-[#4273FF] to-[#4273FF]">
+                                </div>
+                            </div>
+                            <div
+                                class="absolute w-6 h-6 mt-0 bg-[#4273FF] border-4 border-[#bababa] border-opacity-[40%] rounded-full top-0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex md:contents">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div class="flex items-center justify-center w-6 h-full">
+                                <div class="w-1 h-full bg-[#4273FF]"></div>
+                            </div>
+                            <div
+                                class="absolute w-6 h-6 -mt-3bg-[#4273FF]  bg-[#4273FF] border-4 border-[#bababa] border-opacity-[40%]  rounded-full top-0">
+                            </div>
+                        </div>
+                        <div data-aos="zoom-in-down"
+                            class="py-9 pl-8 pr-4 md:mb-0 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-6 col-end-10 md:ml-[20px] mr-auto">
+                            <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">2023 Beginning
+                            </p>
+                            <ul class="text-white raleway max-w-[343px]  ">
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px] pt-4">
+                                    Olympus Partnership Beginning </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-9">
+                                    $25k Grant 2023 </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-9">
+                                    $150k Total seeded Liquidity sought from Olympus DAO </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-9">
+                                    Third Party Partner Intros</li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px] ">
+                                    Elastic Vault Strategy Updates + Olympus $OHM Integrations</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="flex md:contents flex-row-reverse">
+                        <div data-aos="zoom-in-down"
+                            class="py-9 pl-8 pr-4 md:mb-0 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-1 col-end-5 mr-auto md:mr-[20px] md:ml-auto">
+                            <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">Q3 2023 </p>
+                            <ul class="text-white raleway max-w-[343px]  ">
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px] pt-4">
+                                    Partner launched KOLs Marketing Campaign | Rally larger community base </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px]">
+                                    Balancer $EEFI Pools launch </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px]">
+                                    Launch of Elastic Vault Strategy (flagship) + $EEFI</li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px]">
+                                    Third Party Partner Intros</li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px] ">
+                                    Elastic IBO Fundraising Event [Rounds Begin] </li>
+                            </ul>
+                        </div>
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div class="flex items-center justify-center w-6 h-full">
+                                <div
+                                    class="w-1 h-full bg-[#4273FF] rounded-t-full bg-gradient-to-b from-[#4273FF] to-[#4273FF]">
+                                </div>
+                            </div>
+                            <div
+                                class="absolute w-6 h-6 -mt-3bg-[#4273FF] bg-[#4273FF] border-4 border-[#bababa] border-opacity-[40%]  rounded-full top-0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex md:contents">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div class="flex items-center justify-center w-6 h-full">
+                                <div class="w-1 h-full bg-[#4273FF]"></div>
+                            </div>
+                            <div
+                                class="absolute w-6 h-6 -mt-3bg-[#4273FF]  bg-[#4273FF] border-4 border-[#bababa] border-opacity-[40%]  rounded-full top-0">
+                            </div>
+                        </div>
+                        <div data-aos="zoom-in-down"
+                            class="py-9 pl-8 pr-4 md:mb-0 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-6 col-end-10 mr-auto">
+                            <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">Q4 2023 </p>
+                            <ul class="text-white raleway max-w-[343px]  ">
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px] pt-4">
+                                    Front End upgrade </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] li2st-disc ml-[20px]">
+                                    INO [Initial NFT Offering]: Social Elastic NFT campaign </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px]">
+                                    Initial Olympus econOHMy Vaults: </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-9">
+                                    Elastic | FRAXBP LP Vault </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-9 ">
+                                    Olympus | Uniswap LP Vault </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px] max-w-[320px] ">
+                                    Elastic Community Engagement: Onboard contributors to drive protocol development,
+                                    partnerships, community development and begin governance activities</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="flex md:contents flex-row-reverse">
+                        <div data-aos="zoom-in-down"
+                            class="py-9 pl-8 pr-4 md:mb-0 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-1 col-end-5 mr-auto md:mr-[20px] md:ml-auto">
+                            <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">Q1 2024 </p>
+                            <ul class="text-white raleway max-w-[343px]  ">
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px] pt-4 max-w-[320px]">
+                                    Elastic Research and Development: Explore additional vault strategies and develop
+                                    risk and due-diligence procedures associated with strategy development and
+                                    implementation </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px]">
+                                    Elastic Vault (Sub-Vaults): Begin exploring additional tokens to add to core Elastic
+                                    Vault strategy</li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px]">
+                                    Arbitrum Layer 2 yield strategy considerations </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px]">
+                                    Begin developing comprehensive tokenomics for $EFT (Elastic Protocol governance
+                                    token) </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px] ">
+                                    First $EEFI Bonds Program [Bond Protocol] (beta): treasury bolster fundraise </li>
+                            </ul>
+                        </div>
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div class="flex items-center justify-center w-6 h-full">
+                                <div
+                                    class="w-1 h-full bg-[#4273FF] rounded-t-full bg-gradient-to-b from-[#4273FF] to-[#4273FF]">
+                                </div>
+                            </div>
+                            <div
+                                class="absolute w-6 h-6 -mt-3bg-[#4273FF] bg-[#4273FF] border-4 border-[#bababa] border-opacity-[40%]  rounded-full top-0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex md:contents">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div class="flex items-center justify-center w-6 h-full">
+                                <div class="w-1 h-full bg-[#4273FF]"></div>
+                            </div>
+                            <div
+                                class="absolute w-6 h-6 -mt-3bg-[#4273FF]  bg-[#4273FF] border-4 border-[#bababa] border-opacity-[40%]  rounded-full top-0">
+                            </div>
+                        </div>
+                        <div data-aos="zoom-in-down"
+                            class="py-9 pl-8 pr-4 md:mb-0 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-6 col-end-10 mr-auto">
+                            <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">Q2 2024 </p>
+                            <ul class="text-white raleway max-w-[343px]  ">
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px] pt-4">
+                                    Gearbox | OHM [Perp-Leverage] Vault </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px]">
+                                    Bond Protocol (Bonding) Vault </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px]">
+                                    Future Strategy (vote): Real Yield GMX | GPL Vault</li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px] max-w-[320px] ">
+                                    Future Strategy (vote): Elastic Options Vault (sub-vault)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="flex md:contents flex-row-reverse">
+                        <div data-aos="zoom-in-down"
+                            class="py-9 pl-8 pr-4 md:mb-0 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-1 col-end-5 mr-auto md:mr-[20px] md:ml-auto">
+                            <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">Q3 2024</p>
+                            <ul class="text-white raleway max-w-[343px]  ">
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px] pt-4 max-w-[320px]">
+                                    Establish DAO to govern Elastic Finance and fully decentralize protocol</li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px]">
+                                    Elastic Yield Alliance (Strategic Yield Strategy Partners): begin governance vote
+                                    for Multi-chain yield strategies</li>
+                            </ul>
+                        </div>
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div class="flex items-center justify-center w-6 h-full">
+                                <div
+                                    class="w-1 h-full bg-[#4273FF] rounded-t-full bg-gradient-to-b from-[#4273FF] to-[#4273FF]">
+                                </div>
+                            </div>
+                            <div
+                                class="absolute w-6 h-6 -mt-3bg-[#4273FF] bg-[#4273FF] border-4 border-[#bababa] border-opacity-[40%]  rounded-full top-0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex md:contents">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div class="flex items-center justify-center w-6 h-full">
+                                <div class="w-1 h-full bg-[#4273FF]"></div>
+                            </div>
+                            <div
+                                class="absolute w-6 h-6 -mt-3bg-[#4273FF]  bg-[#4273FF] border-4 border-[#bababa] border-opacity-[40%]  rounded-full top-0">
+                            </div>
+                        </div>
+                        <div data-aos="zoom-in-down"
+                            class="py-9 pl-8 pr-4 md:mb-0 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-6 col-end-10 mr-auto">
+                            <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">Q4 2024 </p>
+                            <ul class="text-white raleway max-w-[343px]  ">
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px] pt-4">
+                                    Community voted Yield Strategy 1 (governance) </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px]">
+                                    $EEFI Borrowing and Lending Partnership </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="flex md:contents flex-row-reverse">
+                        <div data-aos="zoom-in-down"
+                            class="py-9 pl-8 pr-4 md:mb-0 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-1 col-end-5 mr-auto md:mr-[20px] md:ml-auto">
+                            <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">Q1 2025 </p>
+                            <ul class="text-white raleway max-w-[343px]  ">
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px] pt-4 max-w-[320px]">
+                                    Community voted Yield Strategy 2 (governance) </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px]">
+                                    Olympus RBS-OHM Real Yield Vault (strategy) </li>
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px]">
+                                    Launch EFT governance token Airdrop</li>
+                            </ul>
+                        </div>
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div class="flex items-center justify-center w-6 h-full">
+                                <div
+                                    class="w-1 h-full bg-[#4273FF] rounded-t-full bg-gradient-to-b from-[#4273FF] to-[#4273FF]">
+                                </div>
+                            </div>
+                            <div
+                                class="absolute w-6 h-6 -mt-3bg-[#4273FF] bg-[#4273FF] border-4 border-[#bababa] border-opacity-[40%]  rounded-full top-0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex md:contents">
+                        <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div class="flex items-center justify-center w-6 h-full">
+                                <div class="w-1 h-full bg-[#4273FF]"></div>
+                            </div>
+                            <div
+                                class="absolute w-6 h-6 -mt-3bg-[#4273FF]  bg-[#4273FF] border-4 border-[#bababa] border-opacity-[40%]  rounded-full top-0">
+                            </div>
+                            <div
+                                class="absolute w-6 h-6 -mt-3bg-[#4273FF]  bg-[#4273FF] border-4 border-[#bababa] border-opacity-[40%]  rounded-full top-0">
+                            </div>
+                        </div>
+                        <div data-aos="zoom-in-down"
+                            class="py-9 pl-8 pr-4 md:mb-0 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-6 col-end-10 mr-auto">
+                            <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">Q2 2025 </p>
+                            <ul class="text-white raleway max-w-[343px]  ">
+                                <li
+                                    class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px] pt-4">
+                                    Hand over Elastic Finance DAO to Community: Complete decentralization of Elastic
+                                    Finance DAO, its treasury, its yield strategies and community governance </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <footer class="footer_bg min-h-screen max-w-[1920px] mx-auto -mt-1 flex flex-col items-center justify-center">
+            <div class="container max-w-[1140px] mx-auto">
+                <div class="w-full flex flex-wrap">
+                    <div class="lg:w-6/12 w-full px-3 items-center flex flex-col justify-center md:mb-0 mb-[54px]">
+                        <h2
+                            class="NeueMachina_font text-white md:text-[46px] sm:text-4xl text-3xl leading-[120%] font-extrabold max-w-[550px] pb-11">
+                            (E,E) Game Theory: An UPGRADE from (3,3)</h2>
+                        <p class="text-white raleway italic leading-[160%] pb-5">Remember (3,3) at its core was about
+                            social coordination. Or, people working together to achieve a common outcome or goal. (E,E)
+                            is the same. But with (E,E) people are working together not to grow a robust treasury that
+                            would back a decentralized stablecoin but instead to establish the first ever decentralized
+                            amplified yield token… $EEFI. A token that can produce yield in any market condition.</p>
+                        <p class="text-white raleway italic leading-[160%]">To achieve this (E,E) has everyone work
+                            together by interacting with and supporting its ecosystem flywheel: Vaults, Bonds, Markets
+                            and other components. Interaction with the (E,E) Flywheel will help build a treasury of what
+                            we term high quality “growth assets”. Assets that are revenue bearing, interest bearing,
+                            Real Yield bearing or Rebase bearing. Where the ‘growth’ aka the yields of these assets are
+                            used to act as long term decentralized leverage on EEFI’s value. This is (E,E). This is
+                            sustainable. This is the UPGRADE.</p>
+                    </div>
+                    <div class=" lg:w-6/12 w-full px-3 mx-auto">
+                        <div class="max-w-[530px] mx-auto">
+                            <div
+                                class="bg-white py-[6.6px] px-[6px] max-w-[129px] max-h-[94px]  rounded-[4px] mx-auto mb-[76px]">
+                                <div class="bg-[#1743C0] text-center py-3 px-6">
+                                    <h2
+                                        class="text-white md:text-2xl text-xl NeueMachina_font_ultra_bold leading-[120%] font-extrabold">
+                                        YOU</h2>
+                                    <p class="text-white text-sm raleway leading-[160%]">(Flywheel)</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap w-full pb-[37px]">
+                                <div class="w-4/12 px-3">
+                                    <div
+                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px] pb-5 px-5">
+                                        <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/bonds.svg "
+                                            alt="bonds ">
+                                        <p class="NeueMachina_font_ultra_bold leading-[160%] text-center md:text-base text-sm">EEFI Bonds</p>
+                                        <p class="raleway text-sm leading-[120%] text-center">Purchase. Lock up. Get
+                                            Discount</p>
+                                    </div>
+                                </div>
+                                <div class="w-4/12 px-3">
+                                    <div
+                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-5">
+                                        <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/lock.svg" alt="lock">
+                                        <p class="NeueMachina_font_ultra_bold leading-[160%] text-center  md:text-base text-sm">Vault </p>
+                                        <p class="raleway text-sm leading-[120%] text-center">Deposit + Earn</p>
+                                    </div>
+                                </div>
+                                <div class="w-4/12 px-3">
+                                    <div
+                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-5">
+                                        <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/yield_farming.svg "
+                                            alt="yield_farming">
+                                        <p class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[160%] text-center">LP Positions
+                                        </p>
+                                        <p class="raleway text-sm leading-[120%] text-center">Yield Farming</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap w-full pb-[37px]">
+                                <div class="w-4/12 px-3">
+                                    <div
+                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-[8px]">
+                                        <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/funding.svg"
+                                            alt=" funding">
+                                        <p class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center"> Funding <br>
+                                            raised acquires <br> Growth assets</p>
+                                    </div>
+                                </div>
+                                <div class="w-4/12 px-3">
+                                    <div
+                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-3">
+                                        <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/flag.svg " alt="flag">
+                                        <p class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center">OHM Treasury
+                                            Strategy </p>
+                                        <p class="raleway md:text-sm text-xs leading-[160%] text-center">Deposit + Earn</p>
+                                    </div>
+                                </div>
+                                <div class="w-4/12 px-3">
+                                    <div
+                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-5">
+                                        <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/marketo.svg "
+                                            alt="Markets  ">
+                                        <p class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[160%] text-center">Markets </p>
+                                        <p class="raleway text-sm leading-[120%] text-center">Trade + Arb (Fees)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap w-full justify-center items-center pb-[37px]">
+                                <div class="w-4/12 px-3 flex items-center justify-center">
+                                    <div
+                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-[8px]">
+                                        <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/growth_assets.svg"
+                                            alt=" funding">
+                                        <p class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center"> Yield From
+                                            Growth
+                                            <br> Assets
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="w-4/12 px-3">
+                                    <div
+                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-[8px]">
+                                        <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/revenue.svg"
+                                            alt=" revenue">
+                                        <p class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center"> Fees.
+                                            Revenue.
+                                            Yield to Treasury
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap w-full justify-center items-center ">
+                                <div class="flex-wrap mx-auto">
+                                    <div
+                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md  pt-[17px]  pb-5 px-4">
+                                        <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/furnace.svg"
+                                            alt=" revenue">
+                                        <p class="NeueMachina_font_ultra_bold md:text-base text-[12.28px] leading-[160%] text-center">EEFI Furnace
+                                        </p>
+                                        <p class="raleway text-sm leading-[160%] text-center">Buy + Burn EEFI</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./assets/js/app.js"></script>
+
+</body>
+
+</html>
