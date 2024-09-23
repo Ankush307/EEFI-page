@@ -31,6 +31,7 @@
 
 .bg_img{
     background-image: url(/assets/image/png/hero_section_background.png);
+    z-index: -1;
 }
 .bear_bull_bg {
     background-image: url(/assets/image/png/bull_bear_background.png);
