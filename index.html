@@ -21,12 +21,11 @@
 
 <body>
     <main class="max-w-[1920px] mx-auto overflow-hidden">
-        <section class="  bg_img bg-no-repeat relative">
-            <div class="relative -z-10">
-                <img class=" absolute -top-4 left-0 xl:max-w-[1160px] lg:max-w-[900px] object-cover lg:h-[710px] xl:h-[810px] h-[650px] md:w-full 2xl:hidden block"
-                    src="./assets/image/png/blue_layer.png" alt="blue layer">
-            </div>
-            <img class="absolute right-[3%] top-[10%]" src="./assets/image/svg/4_dots.svg" alt="4_dots">
+        <section class="relative overflow-hidden max-w-[1920px] mx-auto">
+            <img src="./assets/image/png/blue_layer.png" alt="layer"
+                class="absolute z-[1] top-0 left-0 2xl:w-[1420px] h-full w-full 2xl:h-[800px]" />
+            <img src="./assets/image/png/hero_section_background.png" alt="hero_bottom_layer"
+                class="absolute left-[16%]" />
             <div class="container max-w-[1140px] mx-auto w-full px-3">
                 <nav class="flex pt-[2px] pb-[3px] justify-between relative z-50">
                     <div><a href="/"><img src="./assets/image/svg/logo_img.svg" alt="logo"></a></div>
@@ -76,70 +75,67 @@
                     </div>
                 </nav>
             </div>
-            <div class="relative -z-10">
-                <img class="absolute -top-12 left-[-124px] h-[810px] w-[80%] 2xl:block hidden"
-                    src="./assets/image/png/blue_layer.png" alt="blu layer">
-            </div>
-            <div class="flex flex-col lg:flex-row max-lg:items-center">
-                <div class="text-center flex flex-col max-lg:justify-center lg:mt-36 lg:text-left lg:ml-[151px]">
-                    <h2
-                        class="NeueMachina_font text-white text-[48px] lg:max-w-[428px] lg:text-[85px] leading-tight lg:leading-[95.74px] mt-6 lg:mt-0">
-                        BUILDING ELASTIC PROTOCOL
-                    </h2>
-                    <p
-                        class="font-Raleway text-[16px] leading-6 lg:max-w-[524px] text-white mt-4 lg:mt-6 max-w-[524px] mx-auto">
-                        An ecosystem of unique yield strategies that help you earn yield, amplify, and stretch it across
-                        all
-                        market conditions.
-                    </p>
-                    <a href="/" class="underline raleway font-bold text-[18px] mt-4 text-white">Audited by Omniscia</a>
-                </div>
-                <div class="relative lg:opacity-[60%] xl:opacity-100">
-                    <img  src="/assets/image/png/hero_section_img.png" alt="Space Man"
-                        class="w-[200px]  lg:w-auto mt-8 lg:mt-0 lg:-ml-40 xl:ml-0">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="max-w-[1140px] relative z-10 mx-auto">
+                    <div class="flex flex-wrap">
+                        <div class="w-6/12 max-lg:w-full flex flex-col justify-center">
+                            <div class="w-max justify-center items-center flex flex-col"></div>
+                            <h1 class="max-w-[428px] text-[85px] leading-[112%] ffNeueMachinaRegular text-white">
+                                BUILIDING ELASTIC PROTOCOL
+                            </h1>
+                            <p class="leading-[150%] font-normal text-white max-w-[528px] mt-[30px]">
+                                An ecosystem of unique yield strategies that help you earn
+                                yield, amplify, and stretch it across all market conditions
+                            </p>
+                            <div class="mt-[26px]">
+                                <a class="underline text-white pt-[26px] font-bold" href="/">Audited by Omniscia
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-6/12 max-lg:w-full">
+                            <img class="w-full" src="./assets/image/png/hero_section_img.png" alt="" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
         <section
-            class="bear_bull_bg flex flex-col relative justify-cente  lg:h-[825px] md:h-[640px] sm:h-[556px] h-[520px] max-w-[1920px] mx-auto">
-            <img class="absolute bottom-[-4%]  md:bottom-[-8%] z-10 w-full" src="./assets/image/png/Clouds_bottom.png"
-                alt="clouds">
-            <div class="container z-20 ">
-                <div class="flex justify-center">
-                    <h1
-                        class="lg:text-[52px] md:text-[42px] text-3xl font-extrabold leading-[120%] text-white plus_jakarta text-center">
-                        Amplify and STRETCH GAINS
-                    </h1>
+            class="pb-16 max-sm:pb-0 relative -mb-36 bear_bull_bg overflow-hidden  bg-cover bg-no-repeat bg-center">
+            <div class="bg-black">
+                <h2
+                    class=" relative z-10 text-white plus_jhatkasans text-center max-2xl:text-[52px] max-lg:text-[45px] max-sm:text-[23px] text-[52px] font-extrabold leading-[120%] max-lg:py-6 max-md:py-1 py-4">
+                    Amplify and STRETCH GAINS</h2>
+            </div>
+            <div class="container mx-auto">
+                <div class="flex max-2xl:pt-10 pt-48 mx-auto">
+                    <div class="max-w-[649px] bull_img -mt-[50px] max-md:mt-6 " data-aos="fade-right"
+                        data-aos-easing="linear" data-aos-duration="1500">
+                        <img class=" md:translate-y-[3rem] w-[200px] md:w-full" src="/assets/image/png/bull_img.png"
+                            alt="bull">
+                    </div>
+                    <div class="max-w-[532px] max-2xl:mt-7 mt-7  max-md:mt-11 bear_img" data-aos="fade-left"
+                        data-aos-easing="linear" data-aos-duration="1500">
+                        <img class=" md:translate-y-[3rem] w-[150px] md:w-full" src="/assets/image/png/bear_img.png"
+                            alt="bear">
+                    </div>
+
                 </div>
-                </p>
+                <div
+                    class="flex items-center justify-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] max-2xl:mt-[55px] mt-[150px] z-20">
+                    <p class=" text-center text-white max-w-[555px] text-sm font-normal leading-[157%] mx-auto">We take
+                        a different balanced approach to finding and creating yield opportunities in the everchanging
+                        crypto market. Our yield strategies help users stay protected and hedged during bear markets and
+                        amplify yield during bull markets without resorting to leverage or other dangerous techniques.
+                    </p>
+                </div>
+                <div class="flex items-center justify-center ">
+                    <img src="/assets/image/png/man.png" alt="space-man-stand"
+                        class="absolute bottom-12 max-md:bottom-2 max-sm:bottom-2  w-[100px] max-md:w-[60px] ">
+                </div>
+
             </div>
 
-            <div class="flex justify-centerz-10 relative z-30">
-                <p
-                    class=" text-white font-raleway max-w-[619px] lg:mt-[325px] md:mt-[196px] sm:mt-[148px] mt-[110px] text-center mx-auto drop-shadow-xl xl:drop-shadow-none">
-                    We take a different balanced
-                    approach
-                    to finding
-                    and creating
-                    yield opportunities in the everchanging crypto
-                    market. Our yield strategies help users stay protected and hedged during bear markets and
-                    amplify yield
-                    during
-                    bull
-            </div>
-            <div class="flex z-[10] flex-wraprelative ">
-                <div class="w-6/12 z-[-10] px-3">
-                    <img class="absolute  lg:max-w-[684px] md:max-w-[60%] sm:max-w-[60%] max-w-[50%] bottom-16 "
-                        src="./assets/image/png/bull_img.png" alt="bull-img">
-                </div>
-                <div class="w-6/12 z-[-10] px-3">
-                    <img class="absolute  bottom-14 right-[0%]  lg:max-w-[569px] md:max-w-45%] sm:max-w-[50%] max-w-[40%]"
-                        src="./assets/image/png/bear_img.png" alt="bear-img">
-                </div>
-            </div>
-
-            <img class="z-20 absolute left-[50%] translate-x-[-50%] bottom-20 " src="./assets/image/png/man.png"
-                alt="boy-img">
         </section>
         <section class="roadmap_bg min-h-screen max-w-[1920px] mx-auto">
             <div class=" p-4 pb-24">
