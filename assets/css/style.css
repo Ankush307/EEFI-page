@@ -3,20 +3,23 @@
 
 @font-face {
     font-family: "Neue Machina";
-    src: url("../fonts/NeueMachina-Regular.ttf") ;
+    src: url("../fonts/NeueMachina-Regular.ttf");
 }
+
 @font-face {
     font-family: "Neue Machina ultra_bold";
     src: url("../fonts/NeueMachina-Ultrabold.ttf");
 }
+
 @font-face {
     font-family: "Neue Machina";
-    src: url("../fonts/NeueMachina-Light.ttf") ;
+    src: url("../fonts/NeueMachina-Light.ttf");
 }
 
 .NeueMachina_font {
     font-family: "Neue Machina", sans-serif;
 }
+
 .NeueMachina_font_ultra_bold {
     font-family: "Neue Machina ultra_bold", sans-serif;
 }
@@ -29,23 +32,27 @@
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-.bg_img{
-    background-image: url(/assets/image/png/hero_section_background.png);
+.bg_img {
+    background-image: url(/assets/image/webp/hero_section_background.webp);
     z-index: -1;
 }
+
 .bear_bull_bg {
-    background-image: url(/assets/image/png/bull_bear_background.png);
+    background-image: url(/assets/image/webp/bull_bear_background.webp);
 }
+
 .roadmap_bg {
-    background-image: url(/assets/image/png/Roadmap_bg.png);
+    background-image: url(/assets/image/webp/Roadmap_bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .footer_bg {
-    background-image: url(/assets/image/png/footer_bg_img.png);
+    background-image: url(/assets/image/webp/footer_bg_img.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .dropdown:hover .dropdown_content {
     display: block;
 }
