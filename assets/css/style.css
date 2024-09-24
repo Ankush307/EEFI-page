@@ -15,7 +15,9 @@
     font-family: "Neue Machina";
     src: url("../fonts/NeueMachina-Light.ttf");
 }
-
+.Neue_Machina{
+    font-family: "Neue_Machina", sans-serif;
+}
 .NeueMachina_font {
     font-family: "Neue Machina", sans-serif;
 }
