@@ -46,7 +46,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown_content {
     display: block;
 }
 
