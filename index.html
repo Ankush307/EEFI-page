@@ -23,14 +23,14 @@
     <main class="max-w-[1920px] mx-auto overflow-hidden">
         <section class="relative overflow-hidden max-w-[1920px] mx-auto">
             <img src="./assets/image/png/blue_layer.png" alt="layer"
-                class="absolute z-[1] top-0 left-0 2xl:w-[1420px] h-full w-full 2xl:h-[800px]" />
+                class="absolute z-[1] top-0 left-0 2xl:w-[1420px] h-[800px] w-[1180px] 2xl:h-[800px] " />
             <img src="./assets/image/png/hero_section_background.png" alt="hero_bottom_layer"
                 class="absolute left-[16%]" />
             <div class="container max-w-[1140px] mx-auto w-full px-3">
                 <nav class="flex pt-[2px] pb-[3px] justify-between relative z-50">
                     <div><a href="/"><img src="./assets/image/svg/logo_img.svg" alt="logo"></a></div>
                     <div
-                        class="gap-[25px] flex flex-col menulist justify-center items-center duration-300 ease-linear text-white w-full -right-full min-h-screen fixed top-0 bg-blue-500 z-50 lg:relative lg:min-h-fit lg:w-fit lg:flex-row lg:right-0 lg:bg-transparent">
+                        class="gap-[25px] flex flex-col menulist justify-center items-center duration-300 ease-linear text-white w-full -right-full min-h-screen fixed top-0  z-50 lg:relative lg:min-h-fit lg:w-fit lg:flex-row lg:right-0 lg:bg-transparent bg-black">
                         <p data-aos="fade-up"
                             class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-base"
                             href="/">About</p>
@@ -49,14 +49,23 @@
                         <p data-aos="fade-up"
                             class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-base">
                             Roadmap</p>
-                        <p class="flex items-center">More
-                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M11.8027 6.20992C11.6711 6.06997 11.5037 6 11.3004 6C11.0972 6 10.9297 6.06997 10.7982 6.20992L8 9.18702L5.20179 6.20992C5.07025 6.06997 4.90284 6 4.69955 6C4.49626 6 4.32885 6.06997 4.19731 6.20992C4.06577 6.34987 4 6.52799 4 6.74427C4 6.96056 4.06577 7.13867 4.19731 7.27862L7.49776 10.7901C7.56951 10.8664 7.64723 10.9206 7.73094 10.9527C7.81465 10.9847 7.90433 11.0005 8 11C8.09566 11 8.18535 10.984 8.26906 10.9519C8.35277 10.9198 8.43049 10.8659 8.50224 10.7901L11.8027 7.27862C11.9342 7.13867 12 6.96056 12 6.74427C12 6.52799 11.9342 6.34987 11.8027 6.20992Z"
-                                    fill="white" />
-                            </svg>
-                        </p>
+                        <div class="dropdown relative inline-block" data-aos="fade-up">
+                            <p class="flex items-center cursor-pointer" >More &nbsp; <svg width="16" height="15"
+                                    viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.8027 6.20992C11.6711 6.06997 11.5037 6 11.3004 6C11.0972 6 10.9297 6.06997 10.7982 6.20992L8 9.18702L5.20179 6.20992C5.07025 6.06997 4.90284 6 4.69955 6C4.49626 6 4.32885 6.06997 4.19731 6.20992C4.06577 6.34987 4 6.52799 4 6.74427C4 6.96056 4.06577 7.13867 4.19731 7.27862L7.49776 10.7901C7.56951 10.8664 7.64723 10.9206 7.73094 10.9527C7.81465 10.9847 7.90433 11.0005 8 11C8.09566 11 8.18535 10.984 8.26906 10.9519C8.35277 10.9198 8.43049 10.8659 8.50224 10.7901L11.8027 7.27862C11.9342 7.13867 12 6.96056 12 6.74427C12 6.52799 11.9342 6.34987 11.8027 6.20992Z"
+                                        fill="white" />
+                                </svg>
+                                <div class="dropdown-content hidden absolute bg-[#f9f9f9] min-w-40  z-10 shadow-2xl">
+                                    <a class="text-black py-4 px-3 block hover:bg-[#f1f1f1] raleway" target="_blank"
+                                        href="https://www.facebook.com/">Facebook</a>
+                                    <a class="text-black py-4 px-3 block hover:bg-[#f1f1f1] raleway" target="_blank"
+                                        href="https://www.youtube.com/">Youtube</a>
+                                    <a class="text-black py-4 px-3 block hover:bg-[#f1f1f1] raleway" target="_blank"
+                                        href="https://www.instagram.com/accounts/login/?hl=en">Instagram</a>
+                                </div>
+                            </p>
+                        </div>
                     </div>
                     <div class="flex gap-8">
                         <div class="flex justify-center items-center">
@@ -66,7 +75,8 @@
                         </div>
                         <div class="flex flex-col lg:hidden menubar justify-between z-[200] relative w-8 h-6 mt-6">
                             <span
-                                class="w-full h-1 flex rounded-md transition-all duration-500 bg-white menubarFirst origin-left"></span>
+                                class="w-full h-1 flex rounded-md transition-all duration-500 bg-white menubarFirst origin-left">
+                            </span>
                             <span
                                 class="w-full h-1 flex rounded-md transition-all duration-500 bg-white menubarSecond origin-left"></span>
                             <span
@@ -75,15 +85,17 @@
                     </div>
                 </nav>
             </div>
-            <div class="max-w-[1440px] mx-auto">
+            <div class="container px-5 mx-auto">
                 <div class="max-w-[1140px] relative z-10 mx-auto">
                     <div class="flex flex-wrap">
                         <div class="w-6/12 max-lg:w-full flex flex-col justify-center">
                             <div class="w-max justify-center items-center flex flex-col"></div>
-                            <h1 class="max-sm:pl-4 max-w-[428px] lg:text-[85px] md:text-6xl sm:text-5xl text-4xl leading-[112%] ffNeueMachinaRegular text-white">
+                            <h1
+                                class="max-sm:pl-4 max-w-[428px] lg:text-[85px] md:text-6xl sm:text-5xl text-4xl leading-[112%] ffNeueMachinaRegular text-white">
                                 BUILIDING ELASTIC PROTOCOL
                             </h1>
-                            <p class=" max-sm:px-6 leading-[150%] sm:text-base text-sm  font-normal text-white sm:max-w-[528px] mt-[30px]">
+                            <p
+                                class=" max-sm:px-6 leading-[150%] sm:text-base text-sm  font-normal text-white sm:max-w-[528px] mt-[30px]">
                                 An ecosystem of unique yield strategies that help you earn
                                 yield, amplify, and stretch it across all market conditions
                             </p>
@@ -101,29 +113,31 @@
         </section>
 
         <section
-            class="pb-16 max-sm:pb-0 relative -mb-36 bear_bull_bg overflow-hidden  bg-cover bg-no-repeat bg-center">
+            class="pb-16 max-sm:pb-0 relative  bear_bull_bg overflow-hidden  bg-cover bg-no-repeat bg-center max-h-[800px]">
             <div class="bg-black">
                 <h2
-                    class=" relative z-10 text-white plus_jhatkasans text-center max-2xl:text-[52px] max-lg:text-[45px] max-sm:text-[23px] text-[52px] font-extrabold leading-[120%] max-lg:py-6 max-md:py-1 py-4">
+                    class=" relative z-10 text-white plus_jhatkasans text-center max-2xl:text-[52px] max-lg:text-[45px] max-sm:text-[23px] text-[52px] font-extrabold leading-[120%] max-lg:py-6 py-4">
                     Amplify and STRETCH GAINS</h2>
             </div>
             <div class="container mx-auto">
-                <div class="flex max-2xl:pt-10 pt-48 mx-auto">
+                <div class="flex lg:pt-10 pt-48 mx-auto">
                     <div class="max-w-[649px] bull_img -mt-[50px] max-md:mt-6 " data-aos="fade-right"
                         data-aos-easing="linear" data-aos-duration="1500">
-                        <img class=" md:translate-y-[3rem] w-[200px] md:w-full" src="/assets/image/png/bull_img.png"
-                            alt="bull">
+                        <img class=" md:translate-y-[3rem] 2xl:translate-y-[-5rem] w-[200px] md:w-full"
+                            src="/assets/image/png/bull_img.png" alt="bull">
                     </div>
                     <div class="max-w-[532px] max-2xl:mt-7 mt-7  max-md:mt-11 bear_img" data-aos="fade-left"
                         data-aos-easing="linear" data-aos-duration="1500">
-                        <img class=" md:translate-y-[3rem] w-[150px] md:w-full" src="/assets/image/png/bear_img.png"
-                            alt="bear">
+                        <img class=" md:translate-y-[3rem] 2xl:translate-x-[15rem] 2xl:translate-y-[-5rem] w-[150px] md:w-full"
+                            src="/assets/image/png/bear_img.png" alt="bear">
                     </div>
 
                 </div>
                 <div
-                    class="flex items-center justify-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] max-2xl:mt-[55px] mt-[150px] z-20">
-                    <p class=" text-center text-white max-w-[555px] text-sm font-normal leading-[157%] mx-auto">We take
+                    class="flex items-center justify-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] max-2xl:mt-[55px] mt-[100px] z-20">
+                    <p
+                        class=" text-center text-white max-w-[555px] text-sm font-normal leading-[157%] mx-auto max-lg:shadow-2xl">
+                        We take
                         a different balanced approach to finding and creating yield opportunities in the everchanging
                         crypto market. Our yield strategies help users stay protected and hedged during bear markets and
                         amplify yield during bull markets without resorting to leverage or other dangerous techniques.
@@ -137,17 +151,18 @@
             </div>
 
         </section>
-        <section class="roadmap_bg min-h-screen max-w-[1920px] mx-auto">
+        <section class="roadmap_bg min-h-screen max-w-[1920px] mx-auto relative">
+            <img class=" absolute lg:top-[-4%] md:top-[-2%] 2xl:top-[-5%] sm:top-[-2%] max-sm:top-[-1%] w-full "
+                src="./assets/image/png/Clouds_bottom.png" alt="clouds">
             <div class=" p-4 pb-24">
-                <h2
-                    class=" lg:text-[46px] md:text-4xl text-3xl  leading-[] text-white font-bold mb-[100px] text-center mt-12 ">
+                <h2 class=" lg:text-[46px] md:text-4xl text-3xl text-white font-bold mb-[100px] text-center mt-32 ">
                     Roadmap</h2>
                 <div class="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
                     <div class="flex md:contents flex-row-reverse">
                         <div data-aos="zoom-in-down"
-                            class=" py-9 pl-8  md:mb-0 pr-4 mt-1 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-1 col-end-5 mr-auto md:mr-[20px] md:ml-auto">
+                            class="ml-4 py-9 pl-8  md:mb-0 pr-4 mt-1 mb-6  bg-[#0F2C7E] border  border-[#1643C3] rounded-xl col-start-1 col-end-5 mr-auto md:mr-[20px] md:ml-auto">
                             <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">2022</p>
-                            <ul class="text-white raleway max-w-[343px]  ">
+                            <ul class="text-white raleway max-w-[343px]">
                                 <li
                                     class="md:text-base sm:text-sm text-xs font-normal raleway leading-[150%] list-disc ml-[20px] pt-4">
                                     Ideation of Elastic Protocol </li>
@@ -167,6 +182,9 @@
                         </div>
                         <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                             <div class="flex items-center justify-center w-6 h-full">
+                                <div class="absolute top-2 md:-left-7 -right-9 ">
+                                    <img src="./assets/image/svg/Line.svg" alt="line">
+                                </div>
                                 <div
                                     class="w-1 h-full bg-[#4273FF] rounded-t-full bg-gradient-to-b from-[#4273FF] to-[#4273FF]">
                                 </div>
@@ -179,7 +197,10 @@
 
                     <div class="flex md:contents">
                         <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-                            <div class="flex items-center justify-center w-6 h-full">
+                            <div class="relative flex items-center justify-center w-6 h-full">
+                                <div class="absolute top-2 z-50 -right-9">
+                                    <img src="./assets/image/svg/Line.svg" alt="line">
+                                </div>
                                 <div class="w-1 h-full bg-[#4273FF]"></div>
                             </div>
                             <div
@@ -187,7 +208,7 @@
                             </div>
                         </div>
                         <div data-aos="zoom-in-down"
-                            class="py-9 pl-8 pr-4 md:mb-0 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-6 col-end-10 md:ml-[20px] mr-auto">
+                            class="ml-4 py-9 pl-8 pr-4 md:mb-0 mb-6  bg-[#0F2C7E]  border  border-[#1643C3] rounded-xl col-start-6 col-end-10 md:ml-[20px] mr-auto">
                             <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">2023 Beginning
                             </p>
                             <ul class="text-white raleway max-w-[343px]  ">
@@ -212,7 +233,7 @@
 
                     <div class="flex md:contents flex-row-reverse">
                         <div data-aos="zoom-in-down"
-                            class="py-9 pl-8 pr-4 md:mb-0 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-1 col-end-5 mr-auto md:mr-[20px] md:ml-auto">
+                            class="py-9 ml-4  pl-8 pr-4 md:mb-0 mb-6  bg-[#0F2C7E]  border  border-[#1643C3] rounded-xl col-start-1 col-end-5 mr-auto md:mr-[20px] md:ml-auto">
                             <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">Q3 2023 </p>
                             <ul class="text-white raleway max-w-[343px]  ">
                                 <li
@@ -234,6 +255,9 @@
                         </div>
                         <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                             <div class="flex items-center justify-center w-6 h-full">
+                                <div class="absolute top-2   md:-left-7 -right-9 ">
+                                    <img src="./assets/image/svg/Line.svg" alt="line">
+                                </div>
                                 <div
                                     class="w-1 h-full bg-[#4273FF] rounded-t-full bg-gradient-to-b from-[#4273FF] to-[#4273FF]">
                                 </div>
@@ -247,6 +271,9 @@
                     <div class="flex md:contents">
                         <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                             <div class="flex items-center justify-center w-6 h-full">
+                                <div class="absolute top-2 -right-7">
+                                    <img src="./assets/image/svg/Line.svg" alt="line">
+                                </div>
                                 <div class="w-1 h-full bg-[#4273FF]"></div>
                             </div>
                             <div
@@ -254,7 +281,7 @@
                             </div>
                         </div>
                         <div data-aos="zoom-in-down"
-                            class="py-9 pl-8 pr-4 md:mb-0 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-6 col-end-10 mr-auto">
+                            class="py-9 ml-4 md:ml-0 pl-8 pr-4 md:mb-0 mb-6  bg-[#0F2C7E]  border  border-[#1643C3] rounded-xl col-start-6 col-end-10 mr-auto">
                             <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">Q4 2023 </p>
                             <ul class="text-white raleway max-w-[343px]  ">
                                 <li
@@ -279,10 +306,9 @@
                             </ul>
                         </div>
                     </div>
-
                     <div class="flex md:contents flex-row-reverse">
                         <div data-aos="zoom-in-down"
-                            class="py-9 pl-8 pr-4 md:mb-0 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-1 col-end-5 mr-auto md:mr-[20px] md:ml-auto">
+                            class="py-9 pl-8 ml-4 pr-4 md:mb-0 mb-6  bg-[#0F2C7E]  border  border-[#1643C3] rounded-xl col-start-1 col-end-5 mr-auto md:mr-[20px] md:ml-auto">
                             <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">Q1 2024 </p>
                             <ul class="text-white raleway max-w-[343px]  ">
                                 <li
@@ -308,6 +334,9 @@
                         </div>
                         <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                             <div class="flex items-center justify-center w-6 h-full">
+                                <div class="absolute top-2   md:-left-7 -right-9 ">
+                                    <img src="./assets/image/svg/Line.svg" alt="line">
+                                </div>
                                 <div
                                     class="w-1 h-full bg-[#4273FF] rounded-t-full bg-gradient-to-b from-[#4273FF] to-[#4273FF]">
                                 </div>
@@ -321,6 +350,9 @@
                     <div class="flex md:contents">
                         <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                             <div class="flex items-center justify-center w-6 h-full">
+                                <div class="absolute top-2 -right-7">
+                                    <img src="./assets/image/svg/Line.svg" alt="line">
+                                </div>
                                 <div class="w-1 h-full bg-[#4273FF]"></div>
                             </div>
                             <div
@@ -328,7 +360,7 @@
                             </div>
                         </div>
                         <div data-aos="zoom-in-down"
-                            class="py-9 pl-8 pr-4 md:mb-0 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-6 col-end-10 mr-auto">
+                            class="py-9 pl-8 ml-4 md:ml-0 pr-4 md:mb-0 mb-6 b bg-[#0F2C7E]  border  border-[#1643C3] rounded-xl col-start-6 col-end-10 mr-auto">
                             <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">Q2 2024 </p>
                             <ul class="text-white raleway max-w-[343px]  ">
                                 <li
@@ -349,7 +381,7 @@
 
                     <div class="flex md:contents flex-row-reverse">
                         <div data-aos="zoom-in-down"
-                            class="py-9 pl-8 pr-4 md:mb-0 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-1 col-end-5 mr-auto md:mr-[20px] md:ml-auto">
+                            class="py-9 pl-8 ml-4 pr-4 md:mb-0 mb-6  bg-[#0F2C7E]  border  border-[#1643C3] rounded-xl col-start-1 col-end-5 mr-auto md:mr-[20px] md:ml-auto">
                             <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">Q3 2024</p>
                             <ul class="text-white raleway max-w-[343px]  ">
                                 <li
@@ -363,6 +395,9 @@
                         </div>
                         <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                             <div class="flex items-center justify-center w-6 h-full">
+                                <div class="absolute top-2   md:-left-7 -right-9 ">
+                                    <img src="./assets/image/svg/Line.svg" alt="line">
+                                </div>
                                 <div
                                     class="w-1 h-full bg-[#4273FF] rounded-t-full bg-gradient-to-b from-[#4273FF] to-[#4273FF]">
                                 </div>
@@ -376,6 +411,9 @@
                     <div class="flex md:contents">
                         <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                             <div class="flex items-center justify-center w-6 h-full">
+                                <div class="absolute top-2 -right-7">
+                                    <img src="./assets/image/svg/Line.svg" alt="line">
+                                </div>
                                 <div class="w-1 h-full bg-[#4273FF]"></div>
                             </div>
                             <div
@@ -383,7 +421,7 @@
                             </div>
                         </div>
                         <div data-aos="zoom-in-down"
-                            class="py-9 pl-8 pr-4 md:mb-0 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-6 col-end-10 mr-auto">
+                            class="py-9 pl-8 ml-4 md:ml-0 pr-4 md:mb-0 mb-6  bg-[#0F2C7E]  border  border-[#1643C3] rounded-xl col-start-6 col-end-10 mr-auto">
                             <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">Q4 2024 </p>
                             <ul class="text-white raleway max-w-[343px]  ">
                                 <li
@@ -398,7 +436,7 @@
 
                     <div class="flex md:contents flex-row-reverse">
                         <div data-aos="zoom-in-down"
-                            class="py-9 pl-8 pr-4 md:mb-0 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-1 col-end-5 mr-auto md:mr-[20px] md:ml-auto">
+                            class="py-9 pl-8 pr-4 ml-4 md:mb-0 mb-6  bg-[#0F2C7E]  border   border-[#1643C3] rounded-xl col-start-1 col-end-5 mr-auto md:mr-[20px] md:ml-auto">
                             <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">Q1 2025 </p>
                             <ul class="text-white raleway max-w-[343px]  ">
                                 <li
@@ -414,8 +452,11 @@
                         </div>
                         <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                             <div class="flex items-center justify-center w-6 h-full">
+                                <div class="absolute top-2   md:-left-7 -right-9 ">
+                                    <img src="./assets/image/svg/Line.svg" alt="line">
+                                </div>
                                 <div
-                                    class="w-1 h-full bg-[#4273FF] rounded-t-full bg-gradient-to-b from-[#4273FF] to-[#4273FF]">
+                                    class="w-1 h-full bg-[#4273FF] rounded-t-full  bg-gradient-to-b from-[#4273FF] to-[#4273FF]">
                                 </div>
                             </div>
                             <div
@@ -427,6 +468,9 @@
                     <div class="flex md:contents">
                         <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                             <div class="flex items-center justify-center w-6 h-full">
+                                <div class="absolute top-2 -right-7">
+                                    <img src="./assets/image/svg/Line.svg" alt="line">
+                                </div>
                                 <div class="w-1 h-full bg-[#4273FF]"></div>
                             </div>
                             <div
@@ -437,7 +481,7 @@
                             </div>
                         </div>
                         <div data-aos="zoom-in-down"
-                            class="py-9 pl-8 pr-4 md:mb-0 mb-6 bg-transparent border  border-[#1643C3] rounded-xl col-start-6 col-end-10 mr-auto ">
+                            class="py-9 pl-8 pr-4 ml-4 md:ml-0 md:mb-0 mb-6 border bg-[#0F2C7E]  border-[#1643C3] rounded-xl col-start-6 col-end-10 mr-auto ">
                             <p class="leading-6 text-base md:text-xl text-white font-medium plus_jakarta">Q2 2025 </p>
                             <ul class="text-white raleway max-w-[343px]  ">
                                 <li
@@ -450,12 +494,12 @@
 
                 </div>
         </section>
-        <footer class="footer_bg min-h-screen max-w-[1920px] mx-auto -mt-1 flex flex-col items-center justify-center">
+        <footer class="footer_bg max-w-[1920px] mx-auto -mt-1 flex flex-col items-center justify-center">
             <div class="container max-w-[1140px] mx-auto">
                 <div class="w-full flex flex-wrap">
                     <div class="xl:w-6/12 w-full px-3 items-center flex flex-col justify-center mt-14">
                         <h2
-                            class="NeueMachina_font text-white md:text-[46px] sm:text-4xl text-3xl leading-[160%] font-extrabold max-w-[550px] pb-11 ">
+                            class="NeueMachina_font text-white md:text-[46px] sm:text-[36px] text-3xl leading-[160%] font-extrabold max-w-[550px] pb-11 ">
                             (E,E) Game Theory: An UPGRADE from (3,3)</h2>
                         <p class="text-white raleway italic leading-[160%] pb-5 max-w-[515px]">Remember (3,3) at its
                             core was about
@@ -476,127 +520,133 @@
                     <div class=" xl:w-6/12 w-full px-3 mx-auto">
                         <div class="relative max-w-[530px] mx-auto">
                             <img class="absolute min-h-[820px] sm:min-h-[530px]"
-                                src="./assets/image/png/footer_dots.png" alt="footer">
-                            <div
-                                class="bg-white py-[6.6px] px-[6px] max-w-[129px] max-h-[94px]  rounded-[4px] mx-auto mb-[76px] mt-32">
-                                <div class="bg-[#1743C0] text-center py-3 px-6">
-                                    <h2
-                                        class="text-white md:text-2xl text-xl NeueMachina_font_ultra_bold leading-[120%] font-extrabold">
-                                        YOU</h2>
-                                    <p class="text-white text-sm raleway leading-[160%]">(Flywheel)</p>
+                                src="./assets/image/svg/footer_dots.svg" alt="footer">
+                            <div class="relative z-30">
+                                <div
+                                    class="bg-white py-[6.6px] px-[6px] max-w-[129px] max-h-[94px] relative  rounded-[4px] mx-auto mb-[76px] mt-32">
+                                    <div class="bg-[#1743C0] text-center py-3 px-6">
+                                        <h2
+                                            class="text-white md:text-2xl text-xl NeueMachina_font_ultra_bold leading-[120%] font-extrabold">
+                                            YOU</h2>
+                                        <p class="text-white text-sm raleway leading-[160%]">(Flywheel)</p>
+                                    </div>
+                                     <p class="absolute bottom-[-50%] right-0 raleway text-sm font-extrabold text-white">Interact</p>
                                 </div>
-                            </div>
-                            <div class="flex flex-wrap w-full pb-[37px]">
-                                <div class="w-4/12 px-3">
-                                    <div
-                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px] pb-5 px-5 ">
-                                        <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/bonds.svg "
-                                            alt="bonds ">
-                                        <p
-                                            class="NeueMachina_font_ultra_bold leading-[160%] text-center md:text-base text-sm">
-                                            EEFI Bonds</p>
-                                        <p class="raleway text-sm leading-[120%] text-center">Purchase. Lock up. Get
-                                            Discount</p>
+                                <div class="flex flex-wrap w-full pb-[37px]">
+                                    <div class="w-4/12 px-3">
+                                        <div
+                                            class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px] pb-5 px-5 ">
+                                            <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/bonds.svg "
+                                                alt="bonds ">
+                                            <p
+                                                class="NeueMachina_font_ultra_bold leading-[160%] text-center md:text-base text-sm">
+                                                EEFI Bonds</p>
+                                            <p class="raleway text-sm leading-[120%] text-center">Purchase. Lock up. Get
+                                                Discount</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-4/12 px-3">
+                                        <div
+                                            class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-5">
+                                            <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/lock.svg"
+                                                alt="lock">
+                                            <p
+                                                class="NeueMachina_font_ultra_bold leading-[160%] text-center  md:text-base text-sm">
+                                                Vault </p>
+                                            <p class="raleway text-sm leading-[120%] text-center">Deposit + Earn</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-4/12 px-3">
+                                        <div
+                                            class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-5">
+                                            <img class="pb-[9.53px] mx-auto "
+                                                src="./assets/image/svg/yield_farming.svg " alt="yield_farming">
+                                            <p
+                                                class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[160%] text-center">
+                                                LP Positions
+                                            </p>
+                                            <p class="raleway text-sm leading-[120%] text-center">Yield Farming</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="w-4/12 px-3">
-                                    <div
-                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-5">
-                                        <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/lock.svg" alt="lock">
-                                        <p
-                                            class="NeueMachina_font_ultra_bold leading-[160%] text-center  md:text-base text-sm">
-                                            Vault </p>
-                                        <p class="raleway text-sm leading-[120%] text-center">Deposit + Earn</p>
+                                <div class="flex flex-wrap w-full pb-[37px]">
+                                    <div class="w-4/12 px-3">
+                                        <div
+                                            class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-[8px]">
+                                            <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/funding.svg"
+                                                alt=" funding">
+                                            <p
+                                                class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center">
+                                                Funding <br>
+                                                raised acquires <br> Growth assets</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-4/12 px-3">
+                                        <div
+                                            class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-3">
+                                            <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/flag.svg "
+                                                alt="flag">
+                                            <p
+                                                class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center">
+                                                OHM Treasury
+                                                Strategy </p>
+                                            <p class="raleway md:text-sm text-xs leading-[160%] text-center">Deposit +
+                                                Earn
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="w-4/12 px-3">
+                                        <div
+                                            class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-5">
+                                            <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/marketo.svg "
+                                                alt="Markets  ">
+                                            <p
+                                                class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[160%] text-center">
+                                                Markets </p>
+                                            <p class="raleway text-sm leading-[120%] text-center">Trade + Arb (Fees)</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="w-4/12 px-3">
-                                    <div
-                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-5">
-                                        <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/yield_farming.svg "
-                                            alt="yield_farming">
-                                        <p
-                                            class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[160%] text-center">
-                                            LP Positions
-                                        </p>
-                                        <p class="raleway text-sm leading-[120%] text-center">Yield Farming</p>
+                                <div class="flex flex-wrap w-full justify-center items-center pb-[37px]">
+                                    <div class="w-4/12 px-3 flex items-center justify-center">
+                                        <div
+                                            class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-[8px]">
+                                            <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/growth_assets.svg"
+                                                alt=" funding">
+                                            <p
+                                                class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center">
+                                                Yield From
+                                                Growth
+                                                <br> Assets
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="w-4/12 px-3">
+                                        <div
+                                            class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-[8px]">
+                                            <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/revenue.svg"
+                                                alt=" revenue">
+                                            <p
+                                                class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center">
+                                                Fees.
+                                                Revenue.
+                                                Yield to Treasury
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="flex flex-wrap w-full pb-[37px]">
-                                <div class="w-4/12 px-3">
-                                    <div
-                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-[8px]">
-                                        <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/funding.svg"
-                                            alt=" funding">
-                                        <p
-                                            class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center">
-                                            Funding <br>
-                                            raised acquires <br> Growth assets</p>
-                                    </div>
-                                </div>
-                                <div class="w-4/12 px-3">
-                                    <div
-                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-3">
-                                        <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/flag.svg " alt="flag">
-                                        <p
-                                            class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center">
-                                            OHM Treasury
-                                            Strategy </p>
-                                        <p class="raleway md:text-sm text-xs leading-[160%] text-center">Deposit + Earn
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="w-4/12 px-3">
-                                    <div
-                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-5">
-                                        <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/marketo.svg "
-                                            alt="Markets  ">
-                                        <p
-                                            class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[160%] text-center">
-                                            Markets </p>
-                                        <p class="raleway text-sm leading-[120%] text-center">Trade + Arb (Fees)</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex flex-wrap w-full justify-center items-center pb-[37px]">
-                                <div class="w-4/12 px-3 flex items-center justify-center">
-                                    <div
-                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-[8px]">
-                                        <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/growth_assets.svg"
-                                            alt=" funding">
-                                        <p
-                                            class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center">
-                                            Yield From
-                                            Growth
-                                            <br> Assets
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="w-4/12 px-3">
-                                    <div
-                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md max-md:p-2 pt-[17px]  pb-5 px-[8px]">
-                                        <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/revenue.svg"
-                                            alt=" revenue">
-                                        <p
-                                            class="NeueMachina_font_ultra_bold md:text-base text-sm leading-[120%] text-center">
-                                            Fees.
-                                            Revenue.
-                                            Yield to Treasury
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex flex-wrap w-full justify-center items-center ">
-                                <div class="flex-wrap mx-auto">
-                                    <div
-                                        class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md  pt-[17px]  pb-5 px-4 mb-32">
-                                        <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/furnace.svg"
-                                            alt=" revenue">
-                                        <p
-                                            class="NeueMachina_font_ultra_bold md:text-base text-[12.28px] leading-[160%] text-center">
-                                            EEFI Furnace
-                                        </p>
-                                        <p class="raleway text-sm leading-[160%] text-center">Buy + Burn EEFI</p>
+                                <div class="flex flex-wrap w-full justify-center items-center ">
+                                    <div class="flex-wrap mx-auto">
+                                        <div
+                                            class="bg-white max-w-[160px] h-[130px] max-md:h-[138px] max-md:min-w-[103px]  rounded-md  pt-[17px]  pb-5 px-4 mb-32">
+                                            <img class="pb-[9.53px] mx-auto " src="./assets/image/svg/furnace.svg"
+                                                alt=" revenue">
+                                            <p
+                                                class="NeueMachina_font_ultra_bold md:text-base text-[12.28px] leading-[160%] text-center">
+                                                EEFI Furnace
+                                            </p>
+                                            <p class="raleway text-sm leading-[160%] text-center">Buy + Burn EEFI</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
