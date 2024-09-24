@@ -12,4 +12,5 @@ menubar.addEventListener("click", function () {
     menubarSecond.classList.toggle("left-[100%]");
     menubarSecond.classList.toggle("opacity-0");
     menubarThird.classList.toggle("-rotate-[40deg]");
+    document.body.classList.toggle("overflow-hidden")
 })

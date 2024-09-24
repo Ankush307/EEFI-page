@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
-    font-family: "Neue Machina";
+    font-family: "Neue-Machina";
     src: url("../fonts/NeueMachina-Regular.ttf");
 }
 
@@ -15,8 +15,8 @@
     font-family: "Neue Machina";
     src: url("../fonts/NeueMachina-Light.ttf");
 }
-.Neue_Machina{
-    font-family: "Neue_Machina", sans-serif;
+.Neue-Machina{
+    font-family: "Neue-Machina", sans-serif;
 }
 .NeueMachina_font {
     font-family: "Neue Machina", sans-serif;
